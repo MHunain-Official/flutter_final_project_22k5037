@@ -1,0 +1,79 @@
+name: flutter_final_project_22k5037
+description: "Smart Travel Companion — feature-rich travel app with Bloc, PostgreSQL, Redis, offline support."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # --- State Management (Bloc) ---
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # --- Navigation ---
+  go_router: ^14.2.0
+
+  # --- Networking ---
+  dio: ^5.7.0
+
+  # --- Secure local storage (JWT token) —  Uses shared_preferences on Linux ---
+  # flutter_secure_storage: ^9.2.2
+  # Note: Excluded from Linux platform to avoid libsecret dependency; shared_preferences used instead
+
+  # --- General local storage (theme, cache flags) ---
+  shared_preferences: ^2.3.2
+
+  # --- Image caching ---
+  cached_network_image: ^3.4.1
+
+  # --- Offline connectivity detection ---
+  connectivity_plus: ^6.0.5
+
+  # --- Maps ---
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # --- Fonts ---
+  google_fonts: ^6.2.1
+
+  # --- Shimmer skeleton loading ---
+  shimmer: ^3.0.0
+
+  # --- Dependency injection ---
+  get_it: ^8.0.2
+
+  # --- Functional error types (Either) ---
+  dartz: ^0.10.1
+
+  # --- Date formatting ---
+  intl: ^0.19.0
+
+  # --- Notifications ---
+  flutter_local_notifications: ^18.0.1
+
+  # --- Open portfolio / mail / social links ---
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/images/My Pic.jpg
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
